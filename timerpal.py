@@ -166,6 +166,7 @@ def countdown(stdscr, timeString):
 
             if secondsLeft <= 0:
                 notify(stdscr)
+                curses.beep()
                # drawText(stdscr, figler.renderText("Done!"))
                # stdscr.refresh()
                 break
