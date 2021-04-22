@@ -103,7 +103,7 @@ def notify(stdscr):
     notificationMessage = ("notify-send " + 
             "--icon=/usr/share/icons/Humanity/apps/16/clock.svg " +
             "-u critical " +
-            "'Termtimer' " +
+            "'timerpal' " +
             "'Timer is complete!'")
     os.system(notificationMessage)
 
