@@ -18,7 +18,10 @@ setup(
     install_requires=[
         "click >= 2.0",
         "pyfiglet >= 0.7",
-        "python-dateutil"
+        "python-dateutil",
+        "playsound",
+        "gobject",
+        "PyGObject"
     ],
     py_modules=["timerpal"],
     entry_points={

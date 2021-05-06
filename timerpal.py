@@ -19,6 +19,7 @@ from pyfiglet import Figlet
 from curses import textpad, ERR
 from threading import Thread, Event, Lock
 from queue import Queue, Empty
+from playsound import playsound
 
 CONVERSION = {"hours": 3600, "minutes": 60, "seconds": 1}
 INPUT_EXIT = 1
@@ -166,7 +167,8 @@ def countdown(stdscr, timeString):
 
             if secondsLeft <= 0:
                 notify(stdscr)
-                curses.beep()
+                playsound("/usr/share/sounds/gnome/default/alerts/sonar.ogg")
+               #curses.beep()
                # drawText(stdscr, figler.renderText("Done!"))
                # stdscr.refresh()
                 break
