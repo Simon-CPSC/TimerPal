@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="timerpal",
-    version="0.0.1",
+    version="2021.05.6",
     description="Simple terminal timer with curses",
     author="Simon Robles",
     author_email="simon.g.robles@gmail.com",
